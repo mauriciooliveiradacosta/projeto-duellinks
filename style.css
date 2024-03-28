@@ -100,27 +100,27 @@ main{
     color:azure; 
     padding: 10px;
 }
-a{
+main a{
     color:rgb(0, 183, 255);
     text-decoration: none;
 }
-a:hover{
+main a:hover{
     text-decoration: underline;
 }
-a:active{
+main a:active{
     color: red;
 }
-p{
+main p{
     text-align: justify;
     padding: 20px;
 }
-p{
+main p{
     font-size: 1.3em;
 }
-p#retorno{
+main p#retorno{
     text-align: center;
 }
-p#retorno a{
+main p#retorno a{
     color: red;
     font-size: 2.2em;
 }
@@ -147,7 +147,7 @@ main img{
 
 /*seções */
 section{
-    margin: 40px 40px;
+    margin: 30px 30px;
     padding: 5px;
     display: inline-block ;
     background-color: black;
