@@ -89,7 +89,7 @@ color:#fff;
 main{
     background-color: rgba(43, 36, 36, 0.733);
     border-radius:10px ;
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.61);
+    box-shadow: 4px 4px  8px rgba(0, 0, 0, 0.61);
     max-width: 800px;
     min-width:300px ;
     margin: auto;
@@ -126,12 +126,13 @@ main p#retorno a{
     font-family:var(--fonte1);
     border-radius: 100px;
     background-color:#a23ade9c;
+    padding: 3px;
 }
 /*imagens*/
 main img{
     max-width: 80%;
     border-radius: 20px;
-    box-shadow: -2PX -1PX 20PX 10px rgba(0, 0, 0, 0.582);
+    box-shadow: -2PX -1PX 20PX 0px rgba(0, 0, 0, 0.582);
 }
 
 
