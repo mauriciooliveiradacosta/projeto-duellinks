@@ -44,7 +44,6 @@ header img.flutuante{
 nav{
     font-family: 'Lato';
     font-weight: normal;
-    font-size: ;
     
 }
 nav a{
@@ -55,7 +54,7 @@ nav li{
     list-style: none;
     display: inline-block;
     margin: 2px;
-    padding: 7px;
+    padding: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
     text-shadow:0px 0px 5px #fff;
     color:white;
@@ -69,7 +68,7 @@ color:#fff;
 }
 /*configuração dos itens escondidos*/
 .itensmenu{
-    margin-top: 10px;
+    margin-top:5px ;
     margin-left: -20px;
     display: none;
     position: absolute;
@@ -127,12 +126,6 @@ main p#retorno a{
     font-family:var(--fonte1);
     border-radius: 100px;
     background-color:#a23ade9c;
-}
-.second::after{
-    content: ' ☥';
-}
-.second::before{
-   content:'';
 }
 /*imagens*/
 main img{
