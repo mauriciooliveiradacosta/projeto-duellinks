@@ -36,29 +36,26 @@ header{
     margin: 0px auto 30px auto;
 }
 header img.flutuante{
-    top: 50px;
+    top: 60px;
     left: -20px;
     position: absolute;
 }
 /*configurção do menu*/
 nav{
-    font-family: 'lato';
+    font-family: 'Lato';
     font-weight: normal;
-    font-size: small;
+    font-size: ;
     
 }
 nav a{
     color: white;
     text-decoration: none;
 }
-nav{
-    text-transform: uppercase;
-}
 nav li{
     list-style: none;
     display: inline-block;
     margin: 2px;
-    padding: 10px;
+    padding: 7px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
     text-shadow:0px 0px 5px #fff;
     color:white;
