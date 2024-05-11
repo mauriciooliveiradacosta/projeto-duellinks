@@ -1,0 +1,1 @@
+let res = Document.Write="joga yu-gi-oh?";
