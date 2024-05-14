@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    @keyframes rodar {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+}
 @font-face {
     font-family:'squealer' ;
     src: url('fonts/squealer.ttf') format('truetype');
@@ -15,27 +23,39 @@
 :root{
     --fonte1:'squealer';
 }
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
 body{
     background-image:url(imagens/bg-top.jpg) ;
+    background-size: cover;
     background-attachment: fixed;
     text-align: center;
-    margin: 0px;
 }
 header{
     font-family:var(--fonte1);
-    max-width: 400px;
     min-width: 90%;
     background: linear-gradient(to right,rgba(0, 0, 0, 0.555),rgba(255, 255, 255, 0.548));
     box-shadow: 2px 2px 5px ;color : aliceblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
     border: 5px groove white;
-    padding: 3px;
+    padding: 30px;
     margin: 0px auto 30px auto;
 }
-header img.flutuante{
+header h1{
+    margin-top: 5px;
+}
+img.flutuante{
     top: 60px;
     left: -20px;
     position: absolute;
+    min-width: 10vw;
+    max-width: 15vw;
+}
+img.flutuante{
+    animation: rodar 2s 3;
 }
 /*configurção do menu*/
 nav{
@@ -59,9 +79,7 @@ nav li{
     transition: background-color 1s;
 }
 nav li:hover{
-background-color:#333;
 color:#fff;
--moz-box-shadow:0 3px 10px 0 #CCC;
 }
 /*configuração dos itens escondidos*/
 .itensmenu{
@@ -84,6 +102,7 @@ color:#fff;
 }
 /*corpo do site*/
 main{
+    display: block;
     background-color: rgba(43, 36, 36, 0.733);
     border-radius:10px ;
     box-shadow: 4px 4px  8px rgba(0, 0, 0, 0.61);
@@ -106,8 +125,6 @@ main a:active{
 main p{
     text-align: justify;
     padding: 20px;
-}
-main p{
     font-size: 1.3em;
 }
 main p#retorno{
@@ -128,11 +145,9 @@ main p#retorno a{
 /*imagens*/
 main img{
     max-width: 80%;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: -2PX -1PX 20PX 0px rgba(0, 0, 0, 0.582);
 }
-
-
 /*seções */
 section{
     margin: 30px 30px;
@@ -162,7 +177,7 @@ section:hover{
 #secao2{
     background-image: url(imagens/blueeyes.jpg);
     background-position: center;
-    background-size: 35svw;
+    background-size: cover;
 }
 #secao3{
     background-image: url(imagens/olhosanomalos.jpg);
@@ -172,17 +187,17 @@ section:hover{
 /*video*/
 iframe{
     border-radius: 40px;
-    width: 400px;
+    width: 30vw;
+    height: 40vh;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
 }
 /*rodapé*/
 footer{
-    padding-bottom: 5px;
-    width: 100%;
-    font-family:fantasy ;color: black;
+    padding: 10px;
+    font-family:fantasy ;
+    color: black;
     background-color: rgba(3, 255, 255, 0.925);
 }
 footer p{
-    padding: 15px;
-    max-width: 300px;
+    text-align: center;
 }
