@@ -55,7 +55,7 @@ img.flutuante{
     max-width: 15vw;
 }
 img.flutuante{
-    animation: rodar 2s 3;
+    animation: rodar 2s infinite;
 }
 /*configurção do menu*/
 nav{
