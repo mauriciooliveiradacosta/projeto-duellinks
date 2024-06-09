@@ -36,15 +36,19 @@ body{
 }
 header{
     font-family:var(--fonte1);
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.555),rgba(255, 255, 255, 0.548));
+    background: url(https://dlbrasiladmin.codemill.com.br/db/a6001cc8-096f-44ef-b25f-b48b869c4f0e.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
     box-shadow: 2px 2px 5px ;color : aliceblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
     border: 5px groove white;
     padding: 30px;
+    height: 144px;
     margin: 0px auto 30px auto;
 }
 header h1{
     margin-top: 5px;
+    text-shadow: 4px 4px 6px rgba(13, 13, 131, 0.788);
 }
 img.flutuante{
     top: 60px;
@@ -186,7 +190,7 @@ section:hover{
 /*video*/
 iframe{
     border-radius: 40px;
-    width: 30vw;
+    width: 50vw;
     height: 40vh;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
 }
