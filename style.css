@@ -36,7 +36,6 @@ body{
 }
 header{
     font-family:var(--fonte1);
-    min-width: 90%;
     background: linear-gradient(to right,rgba(0, 0, 0, 0.555),rgba(255, 255, 255, 0.548));
     box-shadow: 2px 2px 5px ;color : aliceblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
@@ -49,13 +48,12 @@ header h1{
 }
 img.flutuante{
     top: 60px;
-    left: -20px;
+    left: 0px;
     position: absolute;
-    min-width: 10vw;
-    max-width: 15vw;
+    width: 18vw;
 }
 img.flutuante{
-    animation: rodar 2s infinite;
+    animation: rodar 2s 0;
 }
 /*configurção do menu*/
 nav{
@@ -73,6 +71,7 @@ nav li{
     margin: 2px;
     padding: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+    border-radius: 15px;
     text-shadow:0px 0px 5px #fff;
     color:white;
     background-color: black;
@@ -90,6 +89,7 @@ color:#fff;
 }
 .itensmenu a{
     padding: 5px;
+    border-radius: 10px;
     background-color: #606060;
     display: block;
 }
@@ -106,8 +106,7 @@ main{
     background-color: rgba(43, 36, 36, 0.733);
     border-radius:10px ;
     box-shadow: 4px 4px  8px rgba(0, 0, 0, 0.61);
-    max-width: 800px;
-    min-width:300px ;
+    width: 60vw;
     margin: auto;
     color:azure; 
     padding: 10px;
@@ -147,7 +146,7 @@ main img{
     max-width: 80%;
     border-radius: 40px;
     box-shadow: -2PX -1PX 20PX 0px rgba(0, 0, 0, 0.582);
-}
+} 
 /*seções */
 section{
     margin: 30px 30px;
