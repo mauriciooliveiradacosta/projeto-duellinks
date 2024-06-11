@@ -30,22 +30,31 @@
 }
 body{
     background-image:url(../imagens/bg-top.jpg) ;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     text-align: center;
 }
 header{
     font-family:var(--fonte1);
+    position: relative;
     background-image: url(../imagens/pexels-jovanvasiljevic-20131195.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     box-shadow: 2px 2px 5px ;color : aliceblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
     border: 5px groove #ffffff;
     border-radius: 20px;
     padding: 30px;
-    height: 144px;
+    width: 60%;
+    height: 200px;
     margin: 0px auto 30px auto;
 }
 header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     margin-top: 10px;
     text-shadow: 4px 4px 6px rgba(13, 13, 131, 0.788);
 }
@@ -110,7 +119,7 @@ main{
     border-radius:10px ;
     box-shadow: 5px 5px  8px rgba(0, 0, 0, 0.61);
     width: 85vw;
-    margin:70px  auto;
+    margin:120px  auto;
     color:azure; 
     padding: 10px;
 }
@@ -125,7 +134,9 @@ main a:active{
     color: red;
 }
 main p{
+    margin: auto;
     text-align: left;
+    width: 800px;
     padding: 20px;
     font-size: 1.3em;
 }
@@ -135,6 +146,10 @@ main p#retorno{
 main p#retorno a{
     color: red;
     font-size: 2.2em;
+}
+main p#retorno{
+    margin: auto;
+    text-align: center;
 }
 /*titulos secundários*/
 .second{
