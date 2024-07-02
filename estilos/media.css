@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@media  screen and (max-width: 768px) {
+            header{
+                  width: auto;
+            }
+                main p{
+                  font-size: 1.2em;
+                    width: 300px;
+                }
+                iframe{
+                  width: 350px;
+                }
+        }
+@media screen and (max-width:400px) {
+      header{
+        width:70vw;
+      }
+      main p{
+            font-size: 1.1em;
+            width: 250px;
+      }
+      iframe{
+            width: 50vw;
+      }
+}
+/* 
+ --Extra small devices (phones, 600px and down) 
+        @media only screen and (max-width: 600px) {...}
+ --Small devices (portrait tablets and large phones, 600px and up) 
+        @media only screen and (min-width: 600px) {...}
+  --Medium devices (landscape tablets, 768px and up) 
+        @media only screen and (min-width: 768px) {...}
+  --Large devices (laptops/desktops, 992px and up)
+        @media only screen and (min-width: 992px) {...}
+  --Extra large devices (large laptops and desktops, 1200px and up) 
+        @media only screen and (min-width: 1200px) {...}
+ */
