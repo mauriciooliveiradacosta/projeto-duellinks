@@ -1,13 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-    @keyframes rodar {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
-}
 @font-face {
     font-family:'squealer' ;
     src: url('../fonts/squealer.ttf') format('truetype');
@@ -26,6 +18,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 
 }
 body{
@@ -33,12 +26,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
 }
 header{
+    text-align: center;
     font-family:var(--fonte1);
     position: relative;
-    background-image: url(../imagens/pexels-jovanvasiljevic-20131195.jpg);
+    background-image: url(../imagens/fundo-head.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -55,17 +48,16 @@ header h1{
     margin-top: 10px;
     text-shadow: 4px 4px 6px rgba(13, 13, 131, 0.788);
 }
+/* imagen flutuante*/
 img.flutuante{
-    top: 60px;
-    left: 0px;
+    top: 50px;
+    left: 180px;
     position: absolute;
     width: 18vw;
 }
-img.flutuante{
-    animation: rodar 2s 0;
-}
 /*configurção do menu*/
-nav{
+nav#itens{
+    display: none;
     font-family: 'Lato';
     font-weight: normal;
     
@@ -88,6 +80,11 @@ nav li{
 }
 nav li:hover{
 color:#fff;
+}
+i#burguer{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.527);
+    display: block;
 }
 /*configuração dos itens escondidos*/
 .itensmenu{
@@ -131,7 +128,7 @@ main a:active{
     color: red;
 }
 main p{
-    margin: auto;
+    text-indent: 20px;
     text-align: left;
     padding: 20px;
     font-size: 1.3em;
@@ -149,6 +146,7 @@ main p#retorno{
 }
 /*titulos secundários*/
 h2.second{
+    text-align: center;
     letter-spacing: 2px;
     font-family:var(--fonte1);
     border-radius: 100px;
@@ -156,52 +154,30 @@ h2.second{
     padding: 3px;
 }
 /*imagens*/
-main img{
+div.fotinha img{
     max-width: 80%;
+    display: block;
+    margin: 20px auto;
     border-radius: 40px;
     box-shadow: -2PX -1PX 20PX 0px rgba(0, 0, 0, 0.582);
 } 
+/*fim das configurações de imagens*/
 /*seções */
-
-section{
-    margin: 30px 30px;
-    padding: 5px;
-    display: inline-block ;
-    background-color: black;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 100%;
-    border: 2px solid rgb(54, 207, 212);
-    transition: width  1s;
+div.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 }
-section:hover{
-    transition: width  1s;
-    background-color: black;
-    width:18vw;
-    height: 18vw;  
-    background-size: cover;
-}
-#secao1{
-    background-image: url(../imagens/magonegro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-#secao2{
-    background-image: url(../imagens/blueeyes.jpg);
-    background-position: center;
-    background-size: cover;
-}
-#secao3{
-    background-image: url(../imagens/olhosanomalos.jpg);
-    background-position:top;
-    background-size: 35svw;
+div.content img{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*video*/
 iframe{
     border-radius: 40px;
-    width:500px;
-    max-width: 820px;
+    display: block;
+    margin: auto;
+    width: 85%;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.473);
 }
 /*rodapé*/
@@ -210,7 +186,7 @@ footer{
     bottom: 0px;
     width: 100%;
     padding: 10px;
-    font-family:fantasy ;
+    font-family:'fantasy' ;
     color: white;
     text-shadow:3px 3px 8px #a23ade9c;
     background-color: black;

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site do maumau</title>
     <link rel="shortcut icon" href="imagens/favi.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="estilos/style.css" >
    <link rel="stylesheet" href="estilos/media.css" >
-   <link rel="javascript" href="config.js">
-<body>
+<body onresize="mudouTamanho()">
      <header>
-        <nav id="topo">
-            <ul>
+        <i id="burguer" class="material-icons" onclick="clickmenu()" >menu</i>
+        <nav id="itens">
+            <ul >
                 <li><a href="#">Home</a></li>
                 <li class="dropdown"><a href="#">Contato</a>
                     <div class="itensmenu">
@@ -29,32 +30,26 @@
             </ul>
         </nav>
         <h1>YU-GI-OH DUEL LINKS</h1>
-        <figure>
-            <img class="flutuante" src="imagens/flutuante-removebg-preview.png" alt="dragão branco de olhos azuis">
-        </figure>
      </header> 
-
+     <figure>
+        <img class="flutuante" src="imagens/flutuante-removebg-preview.png" alt="dragão branco de olhos azuis">
+    </figure>
     <main>
     <p>O Yu-Gi-Oh! <a href="https://play.google.com/store/apps/details?id=jp.konami.duellinks&hl=pt_BR&gl=US">Duel Links</a> é um jogo de cartas virtual gratuito para jogar desenvolvido pela Konami para dispositivos iOS e Android, baseado no jogo de cartas<abbr title="trading card game">(TCG)</abbr> da série Yu-Gi-Oh!. nos dispositivos Androids e iOS. Os Duelistas terão a chance de incorporar Yugi, Kaiba e muitos outros personagens amados da franquia Yu-Gi-Oh! em competitivas e emocionantes batalhas de cards!</p>
         <h2 class="second">MEUS DECKS DE YU-GI-OH</h2>
-        <p>se voçê já joga yu-gi-oh duel links ,essas imagens são links para alguns decks que eu mesmo utilizo no jogo</p>
             <div class="content">
-                <section id="secao1">
-                </section>
-                <section id="secao2">
-                </section>
-                <section id="secao3">
-                </section>
+                <img src="imagens/verso.jpg" alt="verso de carta yu-gi-oh" id="icone" onclick="troca('imagens/magonegro.jpg')" >
+                <img src="imagens/verso.jpg" alt="verso de carta yu-gi-oh" class="icone">
             </div>
         </a>
         <p>yu-gi-oh teve diversos animes durante os anos , mas nosso amado yugi continua sendo um dos personagem mais amados pelos fãs </p>
-        <dive class="fotinha">
+        <div class="fotinha">
             <img src="imagens/fotinha.jpg" alt="fanart do yugi">
         </div>
-        <h2 class="second"> JADEN/YUBEL DA SÉRIE YU-GI-OH GX</h2>
-            <p>jaden sempre duelou com seu deck de herói elementar, na busca de se tornar o próximo rei dos jogos. Em seu duelo contra aster phoenix e seus heróis do destino,ele desbloqueou o poder de seus monstros neoespacias.</p>
+        <h2 class="second"> JADEN/YUBEL </h2>
+            <p>jaden sempre duelou com seu deck de herói elementar, na busca de se tornar o próximo rei dos jogos. em seu duelo final contra yubel ele decide se fundir com ela invés de a destruir</p>
             <div class="fotinha">
-                <img src="imagens/fodão.jpg" alt="fanart de jaden/yubel">
+                <img src="imagens/fodão.jpg" alt="fanart de jaden e yubel">
             </div>
             <h2 class="second"> QUERIDOS "HERÓIS"</h2>
             <P>no yu-gi-oh dentro do arquétipo "HERÓI" temos difentes tipos de HERÓIS, como <strong>herói do destino, herói da visão, herói mascarado e herói do elemento</strong> Decks de "herói elementar" tem como principal estratégia a Invocação-Fusão de monstros poderosos e/ou com efeitos arrasadores.</P>
@@ -71,5 +66,27 @@
     <footer>
         <p>site desenvolvido por: mauricio oliveira da costa <br>turma: informática 2º ano</p>
     </footer>
+    <script>
+        function mudouTamanho(){
+    if (window.innerWidth >= 768){
+        itens.style.display= 'block'
+    }
+    else{
+        itens.style.display = 'none'
+    }
+}
+function clickmenu(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+
+    }
+    else{
+        itens.style.display ='block'
+    }
+}
+function troca (foto){
+    document.getElementById("icone").src = foto;
+}
+    </script>
 </body>
 </html>
