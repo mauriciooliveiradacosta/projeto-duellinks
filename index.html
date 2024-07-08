@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site do maumau</title>
     <link rel="shortcut icon" href="imagens/favi.png" type="image/png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="estilos/style.css" >
    <link rel="stylesheet" href="estilos/media.css" >
 <body onresize="mudouTamanho()">
      <header>
-        <i id="burguer" class="material-icons" onclick="clickmenu()" >menu</i>
-        <nav id="itens">
+        <nav>
             <ul >
                 <li><a href="#">Home</a></li>
                 <li class="dropdown"><a href="#">Contato</a>
@@ -38,10 +36,8 @@
     <p>O Yu-Gi-Oh! <a href="https://play.google.com/store/apps/details?id=jp.konami.duellinks&hl=pt_BR&gl=US">Duel Links</a> é um jogo de cartas virtual gratuito para jogar desenvolvido pela Konami para dispositivos iOS e Android, baseado no jogo de cartas<abbr title="trading card game">(TCG)</abbr> da série Yu-Gi-Oh!. nos dispositivos Androids e iOS. Os Duelistas terão a chance de incorporar Yugi, Kaiba e muitos outros personagens amados da franquia Yu-Gi-Oh! em competitivas e emocionantes batalhas de cards!</p>
         <h2 class="second">MEUS DECKS DE YU-GI-OH</h2>
             <div class="content">
-                <img src="imagens/verso.jpg" alt="verso de carta yu-gi-oh" id="icone" onclick="troca('imagens/magonegro.jpg')" >
-                <img src="imagens/verso.jpg" alt="verso de carta yu-gi-oh" class="icone">
+                <img src="imagens/verso.jpg" alt="verso de carta yu-gi-oh" id="icone" onmousemove="troca('imagens/magonegro.jpg')" onmouseout="troca('imagens/verso.jpg')" >
             </div>
-        </a>
         <p>yu-gi-oh teve diversos animes durante os anos , mas nosso amado yugi continua sendo um dos personagem mais amados pelos fãs </p>
         <div class="fotinha">
             <img src="imagens/fotinha.jpg" alt="fanart do yugi">
@@ -67,25 +63,8 @@
         <p>site desenvolvido por: mauricio oliveira da costa <br>turma: informática 2º ano</p>
     </footer>
     <script>
-        function mudouTamanho(){
-    if (window.innerWidth >= 768){
-        itens.style.display= 'block'
-    }
-    else{
-        itens.style.display = 'none'
-    }
-}
-function clickmenu(){
-    if (itens.style.display == 'block'){
-        itens.style.display = 'none'
-
-    }
-    else{
-        itens.style.display ='block'
-    }
-}
 function troca (foto){
-    document.getElementById("icone").src = foto;
+    document.getElementById('icone').src = foto;
 }
     </script>
 </body>
