@@ -130,7 +130,7 @@ main a:active{
 }
 main p{
     text-indent: 20px;
-    text-align: left;
+    text-align: justify;
     padding: 20px;
     font-size: 1.3em;
 }
