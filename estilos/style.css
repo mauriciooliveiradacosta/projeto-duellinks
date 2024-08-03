@@ -40,7 +40,7 @@ header{
     border: 5px groove #ffffff;
     border-radius: 20px;
     padding: 30px;
-    width: 60%;
+    max-width: 800px;
     height: 200px;
     margin: 0px auto 30px auto;
 }
@@ -113,7 +113,7 @@ main{
     background-color: rgba(43, 36, 36, 0.733);
     border-radius:10px ;
     box-shadow: 5px 5px  8px rgba(0, 0, 0, 0.61);
-    width: 85vw;
+    max-width: 800px;
     margin:120px  auto;
     color:azure; 
     padding: 10px;
@@ -163,14 +163,9 @@ div.fotinha img{
 } 
 /*fim das configurações de imagens*/
 /*seções */
-div.content{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-}
 div.content img{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    display: block;
+    margin: 10px auto;
     cursor: pointer;
 }
 /*video*/

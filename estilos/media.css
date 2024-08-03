@@ -11,26 +11,45 @@
   --Extra large devices (large laptops and desktops, 1200px and up) 
         @media only screen and (min-width: 1200px) {...}
  */
-
-@media screen and (max-width:920px) {
-      header{
-            width: 90%;
+@media screen and (max-width:600px){
+      main{
+            margin-top: 75px;
       }
-     img.flutuante{
-      top: 127px;
-      left: 10px;
-      width: 120px;
-     }
-     nav li{
-      font-size: 1em;
-     }
-      main h2{
-            font-size: 1.3em;
+      main p{
+            font-size: 13pt;
+      }
+      nav{
+            font-size: 10pt;
+      }
+      header{
+            width: 100%;
+            height: 150px;
+      }
+      header h1{
+            font-size: 1.8em;
+      }
+      img.flutuante{
+            top: 120px;
+            left: 0px;
+            width: 80px;
+      }
+      iframe{
+            width: 60vw;
+            height: 25vh;
+      }
+      div.content img{
+            width: 150px;
       }
 }
-@media screen and (max-width:720px){
-      iframe{
-            width: 90%;
-            height: 200px;
+@media screen and (max-width:400px) {
+      header h1{
+            font-size: 1.4em;
       }
+      nav{
+            font-size: 9px;
+      }
+      nav li{
+            width: 30%;
+      }
+      
 }
