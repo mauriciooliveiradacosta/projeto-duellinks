@@ -11,6 +11,13 @@
   --Extra large devices (large laptops and desktops, 1200px and up) 
         @media only screen and (min-width: 1200px) {...}
  */
+ @media screen and (max-width:1000px){
+      img.flutuante{
+            width: 180px;
+            top: 80px;
+            left: 10px;
+      }
+ }
 @media screen and (max-width:600px){
       main{
             margin-top: 75px;
@@ -29,9 +36,9 @@
             font-size: 1.8em;
       }
       img.flutuante{
-            top: 120px;
-            left: 0px;
-            width: 80px;
+            top: 100px;
+
+            width: 100px;
       }
       iframe{
             width: 60vw;
@@ -45,11 +52,19 @@
       header h1{
             font-size: 1.4em;
       }
+      img.flutuante{
+            top: 100px;
+            left: 0px;
+            width: 100px;
+      }
       nav{
             font-size: 9px;
       }
       nav li{
             width: 30%;
+      }
+      .itensmenu{
+            right: 35px;
       }
       
 }

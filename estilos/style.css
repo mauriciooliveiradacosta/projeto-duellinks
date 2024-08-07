@@ -51,9 +51,9 @@ header h1{
 /* imagen flutuante*/
 img.flutuante{
     top: 50px;
-    left: 180px;
+    left: 20vw;
     position: absolute;
-    width: 18vw;
+    width: 200px;
 }
 /*configurção do menu*/
 nav#itens{
