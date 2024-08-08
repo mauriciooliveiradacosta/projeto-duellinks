@@ -50,7 +50,7 @@ header h1{
 }
 /* imagen flutuante*/
 img.flutuante{
-    top: 50px;
+    top: 70px;
     left: 20vw;
     position: absolute;
     width: 200px;
@@ -155,7 +155,7 @@ h2.second{
 }
 /*imagens*/
 div.fotinha img{
-    max-width: 80%;
+    max-width: 400px;
     display: block;
     margin: 20px auto;
     border-radius: 40px;
