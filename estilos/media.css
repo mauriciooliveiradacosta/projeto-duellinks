@@ -45,12 +45,16 @@
 
             width: 100px;
       }
+      div.content img{
+            width: 150px;
+      }
+      div.fotinha img{
+            width: 250px;
+            border-radius: 20px;
+      }
       iframe{
             width: 60vw;
             height: 25vh;
-      }
-      div.content img{
-            width: 150px;
       }
 }
 @media screen and (max-width:400px) {
@@ -68,8 +72,9 @@
       nav li{
             width: 30%;
       }
-      .itensmenu{
-            right: 35px;
+      iframe{
+            width: 80vw;
+            height: 25vh;
       }
       
 }

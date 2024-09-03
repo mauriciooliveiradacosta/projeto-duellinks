@@ -82,15 +82,8 @@ nav li{
 nav li:hover{
 color:#fff;
 }
-i#burguer{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.527);
-    display: block;
-}
 /*configuração dos itens escondidos*/
 .itensmenu{
-    margin-top:5px ;
-    margin-left: -20px;
     display: none;
     position: absolute;
 }
@@ -125,9 +118,6 @@ main a{
 main a:hover{
     text-decoration: underline;
 }
-main a:active{
-    color: red;
-}
 main p{
     text-indent: 20px;
     text-align: justify;
@@ -137,7 +127,7 @@ main p#retorno{
     text-align: center;
 }
 main p#retorno a{
-    color: red;
+    color: white;
     font-size: 2.2em;
 }
 main p#retorno{
@@ -155,7 +145,7 @@ h2.second{
 }
 /*imagens*/
 div.fotinha img{
-    max-width: 400px;
+    width: 400px;
     display: block;
     margin: 20px auto;
     border-radius: 40px;
